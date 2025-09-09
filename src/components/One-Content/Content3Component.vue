@@ -35,8 +35,8 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 
-// 音频路径 
-const audioSrc = ref('/src/assets/audios/成都.mp3');
+// 音频路径 - 使用相对路径
+const audioSrc = ref('./src/assets/audios/成都.mp3');
 
 // 使用Vue的ref引用DOM元素
 const audioRef = ref(null);
@@ -44,6 +44,8 @@ const volume = ref(1);
 const progress = ref(0);
 const isPlaying = ref(false);
 const volumeSliderRef = ref(null);
+const currentTime = ref('0:00'); // 添加缺失的变量
+const duration = ref('0:00');    // 添加缺失的变量
 
 // 监听音量变化，更新CSS变量
 watch(volume, (newValue) => {
@@ -130,7 +132,7 @@ onMounted(() => {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/src/assets/img/署前街少年.jpg');
+    background-image: url('./src/assets/img/署前街少年.jpg');
     background-size: cover;
     filter: blur(10px);
     opacity: 0.3;
