@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- 背景圆 -->
+  <circle cx="24" cy="24" r="20" fill="#667eea"/>
+  <!-- 星星形状 -->
+  <path d="M24 5L28.2 18.6L43 20L32 29.6L34.5 44L24 36L13.5 44L16 29.6L5 20L19.8 18.6L24 5Z" fill="white"/>
+  <!-- 小星星点缀 -->
+  <circle cx="15" cy="15" r="2" fill="white" opacity="0.8"/>
+  <circle cx="33" cy="15" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="18" cy="36" r="1" fill="white" opacity="0.7"/>
+  <circle cx="30" cy="30" r="1.2" fill="white" opacity="0.9"/>
+</svg>
