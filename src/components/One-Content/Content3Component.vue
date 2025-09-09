@@ -2,7 +2,7 @@
     <div class="content3">
         <div class="music-container">
             <div class="album-cover" :class="{ rotating: isPlaying }">
-                <img src="/src/assets/img/署前街少年.jpg">
+                <img src="@/assets/img/署前街少年.jpg">
             </div>
             <div class="music-info">
                 <h3 class="song-title">成都</h3>
@@ -35,8 +35,9 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 
-// 音频路径 - 使用相对路径
-const audioSrc = ref('./src/assets/audios/成都.mp3');
+// 使用ES模块导入语法导入音频文件
+import audioFile from '@/assets/audios/成都.mp3';
+const audioSrc = ref(audioFile);
 
 // 使用Vue的ref引用DOM元素
 const audioRef = ref(null);
