@@ -1,6 +1,6 @@
 <template>
     <div class="two-container">
-         
+         哈哈哈哈哈，我是TwoContainer组件
     </div>
 </template>
 <script setup></script>
